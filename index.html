@@ -10,30 +10,96 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://www.icon2s.com/img16/16x16-pirate-smile.png">
+    
 
 
 
     
-    <title>Hello, world!</title>
+    <title>Pirate Password!</title>
   </head>
 
   
   <body>
 
-    <h1 class="text-white text-center"><i class="fas fa-skull"></i> ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-      Pirate Password ~~~~~~~~~~~~~~~~~~~~~~~~~~~ <i class="fas fa-skull"></i>
-
-    </h1>
+    <div class="container">
     
-    <hr>
- 
-    <h4 class="text-white text-center">Guess the password and win the pirate's treasure... Guess wrong, and walk the plank!</h1>
+      <div class-"row">
 
-      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/15L4zsZ6yfU?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
+        <div class="col-md-12">
 
+    <h1 class="text-white text-center"><i class="fas fa-skull"></i> ~~~~~~~~~~~~~~~~~~~~~~~~~~~ Pirate Password ~~~~~~~~~~~~~~~~~~~~~~~~~~~ <i class="fas fa-skull"></i></h1> 
+        
+        </div>
       
+      </div>
     
-    </body>
-   
+        <hr>
+
+      <div class-"row">
+
+        <div class="col-md-12">
+ 
+    <h4 class="text-white text-center">Guess the password and win the pirate's treasure... Guess wrong, and walk the plank!</h4>
+
+        </div>
+      
+      </div>
+
+      <div class-"row">
+
+          <div class="col-md-12">
+          
+
+            <img src="http://www.videogamesprites.net/ChronoTrigger/NPCs/DarkAges/Dalton%20-%20Nod.gif" id="pirateMan" class="img-thumbnail text-center">
+
+          </div>
+      
+
+        </div>
+
+        <div class="row" id="game-board">
+                <div class="col-md-12">
+                  <h3 id="pirateTalk">What's the Password!</h3>
+                  <br>
+                  <h3 class="text-center" id="wordToGuess">_ _ _ _ _ _ _</h3>
+                  <br>
+                  <h3 class="text-center" id="guesses">Letters Guessed:<span id="wrongGuesses"></span></h3>
+                  
+                  <h3 class="text-center">Guesses Left:<span id="numGuesses"></span></h3>
+                  
+                  <h3 class="text-center">Passwords Cracked:<span id="winCounter">0</span></h3>
+
+                  <h3 class="text-center">You've Walked the Plank: <span id="lossCounter">0</span> Times!</h3>
+                  
+                </div>
+
+                <div class="row">
+
+                  <audio autoplay="1" style="display:none;">
+                       
+                      <source src="./assets/audio/Pirate Of The Caribbean theme -8 bit.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+
+                
+              
+              </div>
+                
+               
+               
+
+  
+                
+                       
+              
+                        
+                    </div>
+
+
+
+     
+  
+  </body>
+  <script type="text/javascript" src="./assets/javascript/game.js"></script>
     </html>
