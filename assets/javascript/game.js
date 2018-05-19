@@ -140,10 +140,9 @@ function compareLetters(userKey) {
                 document.getElementById('wordToGuess').innerHTML = blanksAndSuccesses.join(' ');
             }
         }
-        //Test / Debug
-        //console.log(blanksAndSuccesses);
+ 
     }
-    //Wrong Keys
+    //Wrong Letters
     // This part of the condition is activated if the initial userKey gives us a -1 condition. 
     // If this is the case, the userKey is pushed into the wrongLetters area and 
     // the guesses are decreased.
@@ -153,9 +152,8 @@ function compareLetters(userKey) {
         //Changes HTML
         document.getElementById('numGuesses').innerHTML = guessesLeft;
         document.getElementById('wrongGuesses').innerHTML = wrongLetters;
-        //Test / Debug
-        //console.log('Wrong Letters = ' + wrongLetters);
-        //console.log('Guesses left are ' + guessesLeft);
+        
+      
     }
 
 
@@ -200,7 +198,7 @@ document.onkeyup = function (event) {
     test = true;
     // This is a variable created to apply a value to the event.key. 
     var letterGuessed = event.key;
-    // Changes picture and text back to original after winning.
+    // Changes picture and text back to original after winning and pressing anykey.
     document.getElementById("pirateMan").src="http://www.videogamesprites.net/ChronoTrigger/NPCs/DarkAges/Dalton%20-%20Nod.gif";;
     document.getElementById("pirateTalk").innerHTML = "What's the Password!?";
 
@@ -214,10 +212,7 @@ document.onkeyup = function (event) {
             // This variable is created to create the conditions so the player will not be
             //penalized for guessing a letter already guessed. 
             var spliceDword = alphabet.splice(i, 1);
-            //Test / Debug
-            //console.log('Alphabet is = ' + alphabet[i])
-            //console.log('Spliced Word is = ' + spliceDword);
-
+      
             compareLetters(letterGuessed);
             winLose();
         }
